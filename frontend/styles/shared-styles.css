@@ -1,0 +1,72 @@
+/* Main layout */
+
+a[highlight] {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+[theme~="dark"] {
+    --lumo-base-color: hsl(214, 13%, 14%);
+}
+
+/*code, pre {*/
+/*    background: hsl(214, 13%, 14%) !important;*/
+/*    color: aqua;*/
+/*}*/
+
+.header {
+    padding: 0 var(--lumo-space-m);
+    width: 100%;
+}
+
+.header h1.logo {
+    font-size: 1em;
+    margin: var(--lumo-space-m);
+}
+
+.right {
+    /*display: block;*/
+    /*float: right;*/
+    padding: 0 var(--lumo-space-m);
+}
+
+.light:hover {
+    color: white;
+    background: var(--_lumo-button-color, var(--lumo-primary-text-color));
+}
+.light {
+    color: var(--_lumo-button-color, var(--lumo-primary-text-color));
+    font-weight: bold;
+    font-size: 20px;
+    /*border: 3px solid black;*/
+    cursor: pointer;
+    background: white;
+}
+
+.buttons{
+    border-radius: 4px;
+    border: 2px solid var(--_lumo-button-color, var(--lumo-primary-text-color));
+    cursor: pointer;
+    max-width: 350px;
+}
+
+.dark {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    /*border: 3px solid black;*/
+    cursor: pointer;
+    background: var(--_lumo-button-color, var(--lumo-primary-text-color));
+}
+.dark:hover {
+    color: var(--_lumo-button-color, var(--lumo-primary-text-color));
+    background: white;
+}
+
+/*p {*/
+/*    color: var(--_lumo-button-color, var(--lumo-primary-text-color));*/
+/*}*/
+
+.noDependencySelected {
+    font-style: italic;
+}
